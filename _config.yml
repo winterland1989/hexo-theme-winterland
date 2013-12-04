@@ -1,0 +1,41 @@
+menu:
+  Home: /
+  Archives: /archives
+  3d-scanner: /3d-scanner
+  WIFI-DUINO: /wifi-duino
+  Smart-Car: /smart-car  
+  Cutepie: /cutepie
+  About: /about
+
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: 阅读全文
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: false
+  pubid:
+  facebook:
+  twitter:
+  google: true
+  pinterest:
+
+fancybox: false
+
+google_analytics: UA-45991394-1
+rss: /atom.xml
+
+comment_provider: facebook
+# Facebook comment
+facebook:
+  appid: 123456789012345
+  comment_count: 5
+  comment_width: 840
+  comment_colorscheme: light

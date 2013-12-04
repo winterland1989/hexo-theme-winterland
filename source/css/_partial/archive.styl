@@ -1,0 +1,26 @@
+.archive-title
+  color color-meta
+  font-weight normal
+  margin-bottom 30px
+  &:before
+    font-family font-icon
+    content '\f073'
+    padding-right 15px
+
+  &.tag
+    &:before
+      content '\f02b'
+
+  &.category
+    &:before
+      content '\f07b'
+
+.archive
+  margin-bottom 50px
+  article
+    box-shadow none
+    .post-content
+      padding: 10px 12px 10px 77px;
+      margin-bottom 4px
+      @media screen and (max-width: 600px)
+        padding-left 20px
