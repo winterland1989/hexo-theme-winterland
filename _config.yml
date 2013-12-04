@@ -12,7 +12,11 @@ widgets:
 - category
 - tag
 
+<<<<<<< HEAD
 excerpt_link: 阅读全文
+=======
+excerpt_link: Read More
+>>>>>>> bbe98704dfbc2add3d57c540d3456768e713252c
 
 twitter:
   username:

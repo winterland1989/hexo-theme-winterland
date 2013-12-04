@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Light
 
 Default theme for [Hexo].
@@ -8,6 +9,22 @@ Execute the following command and modify `theme` in `_config.yml` to `light`.
 
 ```
 git clone git://github.com/tommy351/hexo-theme-light.git themes/light
+=======
+## Winterland
+
+My own theme for [Hexo].
+
+## Demo
+
+[www.winterland.me](http://www.winterland.me/)
+
+## Install
+
+Execute the following command and modify `theme` in `_config.yml` to `winterland`.
+
+```
+git clone git://github.com/winterland1989/hexo-theme-winterland.git themes/winterland
+>>>>>>> bbe98704dfbc2add3d57c540d3456768e713252c
 ```
 
 ## Update
@@ -15,12 +32,17 @@ git clone git://github.com/tommy351/hexo-theme-light.git themes/light
 Execute the following command to update Light.
 
 ```
+<<<<<<< HEAD
 cd themes/light
+=======
+cd themes/winterland
+>>>>>>> bbe98704dfbc2add3d57c540d3456768e713252c
 git pull
 ```
 
 ## Config
 
+<<<<<<< HEAD
 Default config:
 
 ``` yaml
@@ -112,3 +134,6 @@ link: http://www.google.com/
 [Hexo]: http://zespia.tw/hexo/
 [AddThis]: https://www.addthis.com
 [Fancybox]: http://fancyapps.com/fancybox/
+=======
+Same as default theme 'light'
+>>>>>>> bbe98704dfbc2add3d57c540d3456768e713252c
