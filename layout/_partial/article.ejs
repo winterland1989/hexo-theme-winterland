@@ -21,7 +21,7 @@
       <% if (index){ %>      
         <%- partial('post/tag') %>
         <% if (item.excerpt){ %>
-          <div>
+          <div style="text-align:center;">
             <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
           </div>
         <% } %>        

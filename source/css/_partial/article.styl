@@ -2,11 +2,6 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  &.page
-    padding-left 20px
-    .icon
-      display none
-      
   &.heart
     .icon
       &:before
@@ -73,6 +68,11 @@ article
     position relative
     @media screen and (max-width: 600px)
       padding-left 20px
+
+
+  &.page
+    .post-content  
+      padding 28px 56px 16px 56px
 
   .gallery
     overflow hidden
@@ -290,7 +290,6 @@ article
     line-height 16px
     position relative
     min-height 16px
-    text-align center
     a
       color color-meta
       &:hover
