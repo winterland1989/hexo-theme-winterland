@@ -20,6 +20,12 @@
         })
     }
 
+    requestAnimationFrame = window.requestAnimationFrame || 
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        function(callback) { setTimeout(callback, 1000 / 60); };
     
     //Lets draw the flakes
     function draw()
@@ -36,12 +42,13 @@
         }
         ctx.fill();
         update();
+        requestAnimationFrame(draw);
     }
     
     //Function to move the snowflakes
     //angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
     var angle = 0.000;
-    var speed = 1;
+    var speed = 0.5;
     function update()
     {
         if(angle > 2*Math.PI)
@@ -67,8 +74,8 @@
         }
     }
     
-    //animation loop
-    setInterval(draw, 33);
+    //start animation loop
+    draw();
     
     $(window).resize(function(){
         W = canvas.width = canvasDiv.width();

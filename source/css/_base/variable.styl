@@ -11,7 +11,15 @@ font-serif = "Georgia", serif
 font-mono = Monaco, Menlo, Consolas, Courier New, monospace
 font-title =  'Poiret One', simhei, cursive;
 
-@import url("//fonts.googleapis.com/css?family=Poiret+One")
+googlefonts-PoiretOne = PoiretOne
+googlefonts-PoiretOne-path = 'font/googlefonts-PoiretOne'
+
+@font-face {
+  font-family 'Poiret One'
+  font-style normal
+  font-weight 400
+  src local('Poiret One'), local('PoiretOne-Regular'), url(googlefonts-PoiretOne-path.woff) format('woff')
+}
 
 font-icon = FontAwesome
 font-icon-path = 'font/fontawesome-webfont'
