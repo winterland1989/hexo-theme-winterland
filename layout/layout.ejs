@@ -1,6 +1,7 @@
 <%- partial('_partial/head') %>
 
 <body>
+  <%- partial('_partial/experiment') %>
   <header id="header" class="inner"><%- partial('_partial/header') %></header>
   <div id="content" class="inner">
     <% if ( page.layout == 'page' ){ %>
@@ -14,5 +15,8 @@
   <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
   <%- partial('_partial/after_footer') %>
   <%- partial('_partial/bds') %>
+  <link rel="stylesheet" href="<%- config.root %>bxslider/jquery.bxslider.css" type="text/css">
+  <script src="<%- config.root %>bxslider/jquery.bxslider.min.js"></script>  
+  <script src="<%- config.root %>js/experiment.js"></script>
 </body>
 </html>

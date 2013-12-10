@@ -12,7 +12,31 @@ body
     margin 0 30px
   @media screen and (max-width: 600px)
     font-size 13px        
-
+  #experiment_wrapper
+    display none
+    background rgba(255,255,255,0.6)
+    max-height 380px
+    width 100%
+    z-index 9999
+    @media screen and (max-width: 1260px)
+      margin-left: -30px; /* will touch very left side */
+      padding-right: 60px; /* will touch very right side */
+    #experiment
+      max-width:1260px
+      margin 0 auto
+      padding 40px 0
+    #experiment_close
+      margin 25px 0
+      text-align center
+      &:before
+        font-family font-icon
+        font-size 2em
+        content '\f077'
+      &:hover
+        color color-link
+        cursor pointer
+      
+    
 h1, h2, h3, h4, h5, h6
   font-family font-title
 

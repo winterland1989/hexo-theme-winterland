@@ -1,10 +1,7 @@
 menu:
   Home: /
   Archives: /archives
-  3d-scanner: /3d-scanner
-  WiFi-Duino: /wifi-duino
-  Smart-Car: /smart-car  
-  Cutepie: /cutepie
+  Experiment: /#experiment  
   About: /about
 
 widgets:
