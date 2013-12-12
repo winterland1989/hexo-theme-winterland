@@ -9,11 +9,12 @@
         if(!slideLoaded){
             slideLoaded = true;
             $('#slide_wrapper').bxSlider({
-                slideWidth: 480,
-                minSlides: 1,
-                maxSlides: 2,
+                slideWidth: 480,                
                 slideMargin: 10,
-                pager: false
+                minSlides: 1.2,
+                maxSlides: 2,
+                moveSlides: 1,
+                pagerSelector: '#slide_pager'
             });
         }
     });

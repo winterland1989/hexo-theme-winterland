@@ -19,14 +19,19 @@ body
     width 100%
     z-index 9999
     @media screen and (max-width: 1260px)
-      margin-left: -30px; /* will touch very left side */
-      padding-right: 60px; /* will touch very right side */
+      margin-left -30px
+      padding-right 60px
     #experiment
       max-width:1260px
       margin 0 auto
-      padding 40px 0
+      padding 40px 0 0 0
+      @media screen and (max-width: 1260px)
+        padding-left 70px
+    #slide_pager
+      @media screen and (max-width: 1260px)
+        padding-left 30px
     #experiment_close
-      margin 25px 0
+      padding 25px 0
       text-align center
       &:before
         font-family font-icon

@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
 }
@@ -74,18 +74,21 @@
 	background: #888;
 	text-indent: -9999px;
 	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 0 10px;
+	width: 8px;
+	height: 8px;
+	margin: 0 5px;
 	outline: 0;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a:hover{
+	background: #444;
+}
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
+	background: #444;
+    border: #444 1px solid;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
