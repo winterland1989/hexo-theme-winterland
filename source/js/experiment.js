@@ -2,23 +2,31 @@
     var slideLoaded = false;
     var slideShown = false;
     var slider;
-    experimentButton = $('a[href="/#experiment"]');
+    var experimentButton = $('a[href="/#experiment"]');
     experimentButton.attr("href", "#experiment");
-    experimentWrapper = $('#experiment_wrapper');
+    var experimentWrapper = $('#experiment_wrapper');
     experimentButton.click(function() {
-        experimentWrapper.slideDown(800);
-        $("html, body").animate({ scrollTop: 0 });
-        if(!slideLoaded){
-            slideLoaded = true;
+        if(!slideLoaded){        
+            experimentWrapper.css('max-height', '361px');
+            experimentWrapper.slideDown(800,function(){   
+                experimentWrapper.css('max-height', '361px');
+            });
             slider = $('#slide_wrapper').bxSlider({
                 slideWidth: 480,                
                 slideMargin: 10,
                 minSlides: 1.2,
                 maxSlides: 2,
                 moveSlides: 1,
-                pagerSelector: '#slide_pager'
+                pagerSelector: '#slide_pager',
+                onSliderLoad: function(){                    
+                    slideLoaded = true;
+                    var wrapperHeight = $('#experiment').outerHeight();
+                    experimentWrapper.css('max-height', wrapperHeight + 'px');
+                }
             });
-        }
+        }else{
+            experimentWrapper.slideDown(800);
+        }        
 	    slideShown = true;
     });
     
@@ -28,7 +36,7 @@
     });
 
     $(window).resize(function(){
-	    if(!slideShown){            
+	    if(!slideShown && slideLoaded){            
             slideLoaded = false;
             slider.destroySlider();
         }

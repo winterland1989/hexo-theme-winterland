@@ -1,8 +1,8 @@
 menu:
-  Home: /
-  Archives: /archives
-  Experiment: /#experiment  
-  About: /about
+  首页/Home: /
+  归档/Archives: /archives
+  实验/Experiment: /#experiment  
+  关于/About: /about
 
 widgets:
 - search

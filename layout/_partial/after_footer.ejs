@@ -26,7 +26,17 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 <% } %>
 <%- partial('scroll2top') %>
 <%- partial('winterland') %>
+<% if (page.title == 'hexo中使用mathjax插入数学公式' || page.title == 'Smart Car'){ %>
 <%- partial('mathjax') %>
+<% } %>
+<link rel="stylesheet" href="<%- config.root %>bxslider/jquery.bxslider.css" type="text/css">
+<script src="<%- config.root %>bxslider/jquery.bxslider.min.js"></script>
+<script src="<%- config.root %>js/experiment.min.js"></script>
+<% if (page.title == '关于我'){ %>
+<script src="<%- config.root %>js/wordshow.js"></script>
+<link href="<%- config.root %>css/misc/about.css" rel="stylesheet" type="text/css">
+<% } %>
+
 <div id="github-ribbon">
 <a href="https://github.com/winterland1989"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/css/forkme.png" alt="Fork me on GitHub"></a>
 </div>
