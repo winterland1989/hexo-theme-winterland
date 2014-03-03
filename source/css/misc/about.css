@@ -17,6 +17,8 @@ text-align: center;
 .post-content > header{
     margin-left:auto;
     margin-right:auto;
+    margin-top:0;
+    margin-bottom:20px;
     width:90px;
     height:90px;
     -moz-border-radius: 48px; 
@@ -43,8 +45,7 @@ text-align: center;
 #timeline .blockWrapper{
     width: 90px;
     height:90px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     border-radius: 49px;
     border: 4px solid #555;
     background:#555;
