@@ -29,6 +29,11 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
     <script src="<%- config.root %>js/about.js"></script>
 <% } %>
 
+<% if (page.title == '吉他调音器'){ %>
+    <script src="<%- config.root %>js/guitar-tuner.js"></script>
+<% } %>
+
+
 <%- partial('scroll2top') %>
 <%- partial('winterland') %>
 <%- partial('mathjax') %>
