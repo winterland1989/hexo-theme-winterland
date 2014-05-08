@@ -28,16 +28,6 @@
     var oscillatorTimeoutHandler;
     var textTimeoutHandler;
     
-    $("#wrapper br").remove();
-
-
-    $("#wrapper .string-button").hover(function(){
-        $(this).css("cursor", "pointer");        
-    },function(){
-        $(this).css("cursor", "");
-        
-    });
-
     $("#wrapper .string-button").click(function(){
         var string = "#wrapper #" + ($(this).attr("id").substring(0,1)) + "string" ;
         var note = Notes.indexOf( $(string).children("span").text() );
@@ -53,12 +43,6 @@
             }
         }
         
-    });
-
-    $("#wrapper .all-button").hover(function(){
-        $(this).css("cursor", "pointer");        
-    },function(){
-        $(this).css("cursor", "");        
     });
 
     $("#wrapper .all-button").click(function(){
@@ -82,12 +66,10 @@
     $("#wrapper .string").hover(function(){
         if( $(this).attr("playing") != "true"){
             $(this).css("color","#aaa");
-            $(this).css("cursor", "pointer");
         }
     },function(){
         if( $(this).attr("playing") != "true"){
             $(this).css("color","#222");
-            $(this).css("cursor", "");
         }
     });
     
@@ -139,15 +121,6 @@
         oscillator.disconnect(); // Disconnect oscillator so it can be picked up by browser¡¯s garbage collector
     }
 
-    $(".combo-button").hover(function(){
-        $(this).css("cursor", "pointer");   
-        $(this).css("background-color", "#999");      
-    },function(){
-        $(this).css("cursor", "");
-        $(this).css("background-color", "");  
-        
-    });
-
     $(".combo-button").click(function(){
         var notes = $(this).attr("notes").split(" ")
         for(var i = 1; i<=6; i++){
@@ -156,5 +129,10 @@
         }
     });
 
+//--------------------------------------metronome-------------------------------------//
+var c = document.getElementById("metronome-canvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0,0,150,75);
 
 })(jQuery);

@@ -41,9 +41,11 @@
 }    
 #timeline  li{
     position: relative;
+    line-height: 1;
 }
 #timeline .circle{
     top: 50%;
+    margin-top:-10px;
     left: -44px;
     width: 10px;
     height: 10px;
@@ -55,6 +57,7 @@
 }
 #timeline .date{
     top: 50%;
+    margin-top:-10px;
     left: -128px; 
     font-family: 'Poiret One', simhei, cursive;
     font-size: 1.2em;
@@ -62,13 +65,14 @@
     position: absolute;
 }
 #timeline .content{
-    padding: 40px 20px;
+    padding: 8% 5%;
     text-align:center;
 }
 #timeline .content:before{
     position: absolute;
     left: -16px;
     top: 50%;
+    margin-top:-10px;
     content: "";
     width: 0;
     height: 0;
@@ -79,10 +83,10 @@
 }
 #timeline .content img{
     width:480px;   
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -khtml-border-radius: 24px;  
-    border-radius: 24px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;  
+    border-radius: 20px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;

@@ -1,0 +1,85 @@
+.all-button{
+    position:absolute;left:50%;
+}
+.all-button:hover{
+    cursor:pointer;
+}
+.string{
+    position:absolute;   
+}
+.string:hover{
+    cursor:pointer;
+}
+.string>span{
+    font-size:1.2em; 
+}
+.string-button{
+    position:absolute;
+}
+.string-button:hover{
+    cursor:pointer;
+}
+.leftcol{
+    margin-left:-12px;
+}
+.rightcol{
+    margin-right:-12px;
+}
+.upArrow10px{
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #222;
+}
+.upArrow10px:hover{
+    border-bottom:10px solid #999;
+}
+
+.downArrow10px{
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid #222;
+}
+.downArrow10px:hover{
+    border-top:10px solid #999;
+}
+.upArrow25px{
+    width:0;
+    height:0;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-bottom:25px solid #222;
+}
+.upArrow25px:hover{
+    border-bottom:25px solid #999;
+}
+.downArrow25px{
+    width:0;
+    height:0;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-top:25px solid #222;
+}
+.downArrow25px:hover{
+    border-top:25px solid #999;
+}
+.combo-button{
+    border:3px solid #222;
+    display:inline-block;
+    padding:8px;
+    margin:10px;
+    width:150px;
+}
+.combo-button:hover{
+    cursor:pointer;
+    background-color:#999;
+}
+#wrapper3{
+display:block;
+width:80%;
+padding:50px 10%;
+height:300px;
+}
