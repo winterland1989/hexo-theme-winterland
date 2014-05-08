@@ -130,9 +130,46 @@
     });
 
 //--------------------------------------metronome-------------------------------------//
-var c = document.getElementById("metronome-canvas");
-var ctx = c.getContext("2d");
-ctx.fillStyle = "#FF0000";
-ctx.fillRect(0,0,150,75);
+var container = $("#wrapper3");
+var m_canvas = $("#metronome-canvas");
+
+var m_width = 0;
+
+
+
+$(window).resize( respondCanvas );
+
+respondCanvas();
+
+function respondCanvas(){ 
+    m_width =  $(container).width();
+    $(container).height(m_width);
+    
+
+    m_canvas.attr('width', m_width ); //max width
+    m_canvas.attr('height',m_width); //max height
+
+
+    redraw();
+}
+
+function redraw(){
+var ctx = m_canvas.get(0).getContext("2d");
+ctx.lineWidth = m_width*0.1;
+ctx.strokeStyle = '#ccc';
+ctx.beginPath();
+ctx.arc(m_width/2,m_width/2,m_width*0.4,0,2*Math.PI);
+ctx.stroke();
+ctx.closePath();
+
+ctx.strokeStyle = '#999';
+ctx.beginPath();
+ctx.arc(m_width/2,m_width/2,m_width*0.3,0,2*Math.PI);
+ctx.stroke();
+ctx.closePath();
+}
+
+//--------------------------------------other-------------------------------------//
 
 })(jQuery);
+
