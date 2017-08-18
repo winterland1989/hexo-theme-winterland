@@ -1,7 +1,6 @@
 menu:
   首页/Home: /
   归档/Archives: /archives
-  试验/Experiment: /experiment  
   关于/About: /about
 
 widgets:
@@ -18,10 +17,10 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: false
+  enable: true
   pubid:
-  facebook:
-  twitter:
+  facebook: true
+  twitter: true
   google: true
   pinterest:
 
