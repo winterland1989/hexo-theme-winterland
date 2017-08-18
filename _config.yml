@@ -27,7 +27,6 @@ addthis:
 fancybox: false
 
 google_analytics: UA-45991394-1
-rss: /atom.xml
 
 comment_provider: facebook
 # Facebook comment
