@@ -14,5 +14,10 @@
   <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
   <%- partial('_partial/after_footer') %>
 
+  <% if (theme.addthis) { %>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="<%- theme.addthis %>"></script> 
+  <% } %>
+
 </body>
 </html>

@@ -14,22 +14,11 @@ twitter:
   show_replies: false
   tweet_count: 5
 
-addthis:
-  enable: true
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest:
+addthis: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3e3079f1b7ad5
+
+uyan: //v2.uyan.cc/code/uyan.js?uid=2142680
 
 fancybox: false
 
-google_analytics: UA-45991394-1
 
-comment_provider: facebook
-# Facebook comment
-facebook:
-  appid: 123456789012345
-  comment_count: 5
-  comment_width: 840
-  comment_colorscheme: light
+google_analytics: UA-45991394-1
