@@ -27,9 +27,13 @@
         <% } %>        
       <% } else { %>
         <%- partial('post/category') %>
-        <% if (theme.uyan){ %>
-          <div id="uyan_frame"></div>
-          <script type="text/javascript" src="<%- theme.uyan %>"></script>
+        <% if (theme.utterances){ %>
+          <script src="https://utteranc.es/client.js"
+            repo="<%- theme.utterances.repo %>"
+            branch="<%- theme.utterances.branch %>"
+            issue-term="<%- theme.utterances.term %>"
+            async>
+          </script>
         <% } %>
       <% } %>
 

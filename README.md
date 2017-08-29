@@ -1,6 +1,6 @@
 ## Winterland
 
-My own theme for [Hexo].
+My own theme for [Hexo], use [addThis](https://www.addthis.com) for sharing and [utterances](https://utteranc.es/) for commenting.
 
 ## Demo
 
@@ -25,4 +25,6 @@ git pull
 
 ## Config
 
-Same as default theme 'light'
+Please change `addthis`, `utterances` and `google_analytics` field in `_config.yml`, for `utterances` you have to add an `utterances.json` under your repo.
+
+

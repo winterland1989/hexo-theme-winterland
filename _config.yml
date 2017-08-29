@@ -16,7 +16,10 @@ twitter:
 
 addthis: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3e3079f1b7ad5
 
-uyan: //v2.uyan.cc/code/uyan.js?uid=2142680
+utterances:
+  repo: winterland1989/winterland1989.github.io
+  branch: master
+  term: pathname
 
 fancybox: false
 
