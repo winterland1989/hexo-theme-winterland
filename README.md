@@ -27,4 +27,6 @@ git pull
 
 Please change `addthis`, `utterances` and `google_analytics` field in `_config.yml`, for `utterances` you have to add an `utterances.json` under your repo.
 
+## Layout icon
 
+Support following layout icons: notify, post(default), photo, video, link.
